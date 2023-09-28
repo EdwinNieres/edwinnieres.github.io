@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto+Slab:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+/* IGUANAS */
+
+nav {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+}
+
+nav h1 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 4em;
+}
+
+/* FOTO DE IGUANA */
+
+main img {
+    width: 100%;
+}
+
+/* PARRAFO Y FOTO DE IGUANA */
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    height: 40vh;
+}
+
+section img {
+    top: 845px;
+    left: 731px;
+    width: 40vh;
+    height: 30vh;
+    justify-content: center;
+}
+
+section p {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    width: 50vh;
+    height: 30vh;
+    padding-right: 40px;
+    justify-content: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    section p {
+        font-size: 0.8em;
+        padding-left: 40px;
+    }
+}
+
+/* CARACTERISTICAS DE LAS IGUANAS */
+
+.box {
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    color: white;
+    background-color: rgb(29, 29, 29);
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.box button {
+    background-color: rgb(29, 29, 29);
+    border: none;
+    display: flex;
+    margin-top: 100px;
+
+}
+
+.box button i {
+    color: white;
+    background-color: rgb(29, 29, 29);
+}
+
+.box button i:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.box p {
+    background-color: rgb(29, 29, 29);
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* 3 FOTOS DE IGUANAS */
+
+div {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div img {
+    width: 280px;
+    height: 200px;
+    margin: 15px;
+}
+
+div img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    width: 290px;
+    height: 220px;
+}
+
+@media (max-width: 1000px) {
+    div img {
+        width: 150px;
+        height: 100px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    div img {
+        width: 200px;
+        height: 150px;
+        margin: 15px;
+    }
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: rgb(184, 255, 167);
+    background-color: rgb(29, 29, 29);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

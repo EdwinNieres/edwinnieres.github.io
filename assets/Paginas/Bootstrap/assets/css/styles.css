@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto+Slab:wght@400;900&family=Roboto:wght@300;500&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+}
+
+/* COLORES VARIABLES */
+
+:root {
+    --white: #fff;
+    --gris: #c7c6c6;
+    --claro: #707070;
+    --light: #f8f9fa;
+    --success: #28a745;
+    --otro-gris: #212529;
+
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: var(--success);
+    margin: 0;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#navbarNav .navbar-nav .nav-item .active {
+    color: var(--white);
+}
+
+.container-fluid .navbar-brand {
+   width: 100px;
+   cursor: pointer;
+   margin-left: 20px;
+}
+
+#navbarNav .navbar-nav .nav-item .gris {
+    color: var(--gris);
+}
+
+#navbarNav .navbar-nav .nav-item .disabled {
+    color: #3a914f;
+}
+
+.container-fluid .navbar-toggler {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+
+/* AJUSTANDO EL TAMAÑO DE LAS CARDS */
+
+.col .card{
+    width: 80%;
+    margin: auto;
+}
+
+.col .card img {
+    width: 100%;
+    height: 100%;
+}
+
+/* TITULOS y TEXTOS DE LAS CARDS */
+
+.card-body .card-title {
+    color: var(--otro-gris);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.card-body .card-text {
+    color: var(--claro);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.card-body .card-text-2 {
+    color: var(--claro);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+/* FINAL CARDS */
+
+.card-footer {
+    display: flex;
+    justify-content: end;
+}
+
+.card-footer .text-body-secondary {
+    color: var(--claro);
+    display: flex;
+    justify-content: end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    align-items: center;
+}
+
+.card-footer p{
+    color: var(--success);
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/* ICONOS DE DIRECCION EN CARDS */
+
+.card-body .card-text-2 .fa-solid {
+    margin: 5px;
+    color: var(--claro);
+}
+
+/* FORMULARIO */
+
+.formulario {
+    background-color: var(--success);
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=mail] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: var(--light);
+    color: var(--otro-gris);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: var(--white);
+}
+
+footer img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: var(--claro);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}

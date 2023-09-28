@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@1,400;1,700&family=Oswald:wght@700&family=Roboto+Slab:wght@400;900&family=Roboto:wght@300&display=swap');
+
+/* CSS GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gelasio', serif;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+li{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+/* CSS MOBILE VERSION */
+
+/* ESTILO DE BOTONES */
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: aqua;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: aqua;
+}
+
+/* CONTENEDOR */
+
+.contenedor {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* SECCION DE HEADER */
+
+header {
+    background-color: #535353;
+}
+
+header .logo {
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+}
+
+header .logo:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+    font-weight: bold;
+}
+
+header a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* SECCION DE HERO */
+
+#hero {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.5), 
+    rgba(0,0,0,0.5) 
+    )
+    ,url("../img/nav-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* SECCION DE PORTAFOLIO */
+
+#mi-portafolio {
+    background-color: rgb(20, 20, 20);
+    color: rgb(202, 202, 202);
+    text-align: center;
+}
+
+#mi-portafolio .contenedor {
+    padding: 50px 10px;
+}
+
+#mi-portafolio p {
+    display: none;
+
+}
+
+#mi-portafolio h2 {
+    margin-top: 0px;
+    font-size: 3.5em;
+}
+
+.cart:first-child {
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.75), 
+    rgba(0,0,0,0.75) 
+    )
+    ,url("../img/cupones.jpg");
+}
+
+.cart:nth-child(2) {
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.75), 
+    rgba(0,0,0,0.75) 
+    )
+    ,url("../img/iguana-page.jpg");
+}
+
+.cart:nth-child(3) {
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.75), 
+    rgba(0,0,0,0.75) 
+    )
+    ,url("../img/landing-page.jpg");
+
+}
+
+#mi-portafolio .cart button {
+    font-size: 1em;
+}
+
+#mi-portafolio .cart {
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    border-radius: 18px;
+}
+
+#mi-portafolio .cart p a {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+/* SECCION DE APRENDIZAJE */
+
+#aprendizaje .contenedor {
+    text-align: center;
+    padding: px 16px;
+}
+
+#aprendizaje li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#aprendizaje h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    background-color: rgb(20, 20, 20);
+    padding: 30px 20px;
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=mail] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+    color: white;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 21px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* SECCION DE FOOTER */
+
+footer {
+    background-color: #535353;
+    color: whitesmoke;
+}
+
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* CSS DESKTOP VERSION */
+
+@media (min-width: 1080px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+
+    #mi-portafolio .paginas {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #mi-portafolio p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #mi-portafolio .cart h3 {
+        margin-top: 0px;
+    }
+
+    #mi-portafolio .cart {
+        padding: 1px 10px 10px 10px;
+    }
+
+
+
+    .cart:first-child:hover {
+        background-image: linear-gradient(20deg, 
+        rgba(0,0,0,1), rgba(0,0,0,0.75)
+        ),url("../img/cupones.jpg");
+        cursor: pointer;
+        color: white;
+    }
+
+    .cart:nth-child(2):hover {
+        background-image: linear-gradient(-10deg, 
+        rgba(0,0,0,1), 
+        rgba(0,0,0,0.75) 
+        )
+        ,url("../img/iguana-page.jpg");
+        cursor: pointer;
+        color: white;
+    }
+    
+    .cart:nth-child(3):hover {
+        background-image: linear-gradient(25deg, 
+        rgba(0,0,0,1), 
+        rgba(0,0,0,0.75) 
+        )
+        ,url("../img/landing-page.jpg");
+        cursor: pointer;
+        color: white;
+    
+    }
+
+    footer .contenedor {
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+}
+
